@@ -36,7 +36,7 @@ void hack(DWORD pid) {
 }
 
 int main() {
-	char pName[32] = "¥Â¡ˆ1.9";
+	char pName[32] = "¬¥√•√Å√∂1.9";
 	DWORD pid = GetProcessByPid(pName);
 	printf("Process Name : %s\n", pName);
 	printf("PID : %d\n", pid);
@@ -46,7 +46,7 @@ int main() {
 		if( select == 1 ) {
 			select = MessageBox(NULL, "Do you want to run a Hack?", "Info", MB_YESNO);
 			if( select == IDYES ) {
-				printf("«Ÿ¿ª Ω««‡ «ﬂΩ¿¥œ¥Ÿ.");
+				printf("You ran the hack!");
 				hack(pid);
 			}
 		}
