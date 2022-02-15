@@ -30,7 +30,7 @@ HANDLE GetProcessByHandle(DWORD ProcessPid) {
 }
 
 void hack(DWORD pid) {
-	BYTE address = 0x40311e;
+	LPVOID address = (LPVOID)0x40311e;
 	BYTE buff[6] = {0x90, 0x90, 0x90, 0x90, 0x90, 0x90};
 	WriteProcessMemory(GetProcessByHandle(pid), address, buff, sizeof(buff), NULL);
 }
