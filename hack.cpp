@@ -36,7 +36,7 @@ void hack(DWORD pid) {
 }
 
 int main() {
-	char pName[32] = "´åÁö1.9";
+	char pName[32] = "닷지1.9";
 	DWORD pid = GetProcessByPid(pName);
 	printf("Process Name : %s\n", pName);
 	printf("PID : %d\n", pid);
